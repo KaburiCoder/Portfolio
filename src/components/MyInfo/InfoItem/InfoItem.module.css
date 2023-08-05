@@ -1,0 +1,25 @@
+.body {
+  display: flex;
+  align-items: center;  
+  justify-content: center;  
+}
+
+.icon {
+  width: 3rem;
+  margin-right: 40px;
+}
+
+.labels{
+  width: 12rem;
+  line-height: 0;
+}
+
+.labels__title{
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.labels__detail{
+  font-size: 2rem;
+  color: rgb(80, 80, 80);
+}

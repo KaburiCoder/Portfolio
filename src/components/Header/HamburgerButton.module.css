@@ -1,0 +1,13 @@
+.button {
+  display: flex;
+  border: 1px solid lightgray;  
+  padding: 10px;
+  border-radius: 6px;
+  background-color: transparent;
+  cursor: pointer;    
+}
+
+.button:hover{
+  background-color: lightgray;
+  
+}

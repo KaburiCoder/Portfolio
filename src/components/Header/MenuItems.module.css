@@ -1,0 +1,29 @@
+.menu-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.menu-list li {
+  padding: 10px 0;
+  font-size: 1.2rem;
+  color: rgb(120, 120, 120);
+}
+
+.menu-list li:hover {
+  color: rgb(50, 90, 90);
+  cursor: pointer;
+}
+
+@media (min-width: 768px) {
+  .menu-list {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .menu-list li {
+    padding: 0px 10px;
+    font-size: 1.2rem;
+    color: whitesmoke;
+  }
+}

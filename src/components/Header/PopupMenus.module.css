@@ -1,0 +1,44 @@
+.main {
+  position: fixed;
+  top: 3.5rem;
+  left: 0;
+  right: 0;
+  background-color: white;
+  overflow: hidden;
+  z-index: 1;   
+}
+
+.popup {
+  animation: topToBottom 0.3s ease-out;   
+  height: var(--menus-height);
+}
+
+.close {
+  animation: bottomToTop 0.3s ease-in;   
+  height: 0; 
+}
+
+@keyframes topToBottom {
+  from {
+    height: 0; 
+    opacity: 0;
+  }
+
+  to {
+    height: var(--menus-height);
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
+
+@keyframes bottomToTop {
+  from {
+    height: var(--menus-height);
+    opacity: 1;
+  }
+
+  to {
+    height: 0px;
+    opacity: 0;
+  }
+}

@@ -1,4 +1,3 @@
-import Title from '../UI/Title/Title';
 import InfoItem from './InfoItem/InfoItem';
 import classes from './MyInfo.module.css';
 import { LiaBirthdayCakeSolid } from 'react-icons/lia';
@@ -6,6 +5,7 @@ import { GiQuickMan } from 'react-icons/gi';
 import { MdOutlineSignpost } from 'react-icons/md';
 import { AiOutlinePhone, AiOutlineMail } from 'react-icons/ai';
 import { GrInfo } from 'react-icons/gr';
+import PopolArticle from '../UI/Title/PopolArticle/PopolArticle';
 
 const iconSize = 40;
 const items = [
@@ -42,7 +42,6 @@ const items = [
 ];
 
 const MyInfo = () => {
-
   const itemContents = items.map(item => (
     <InfoItem
       icon={item.icon}
@@ -51,14 +50,11 @@ const MyInfo = () => {
   ));
 
   return (
-    <div className={classes.content}>
-      <Title text='Information' color='black' />
-
-
+    <PopolArticle title='Information' titleColor='black' backgroundColor='whitesmoke'>
       <div className={classes.content__body}>
         {itemContents}
       </div>
-    </div>
+    </PopolArticle>
   );
 }
 

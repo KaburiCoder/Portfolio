@@ -3,13 +3,15 @@ import './App.css';
 import Header from './components/Header/Header';
 import Head from './components/head/Head';
 import MyInfo from './components/MyInfo/MyInfo';
+import Skills from './components/Skills/Skills';
 
 function App() {
-  return (    
+  return (
     <div>
-      <Header/>
-      <Head/>
-      <MyInfo/>
+      <Header />
+      <Head />
+      <MyInfo />
+      <Skills />
     </div>
   );
 }
